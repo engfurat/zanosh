@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenoosh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css"> 
+    <link rel="stylesheet" href="CSS/sections.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <button class="mobile-menu-btn" id="mobile-btn"><i class="fas fa-bars"></i></button>
+
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-crown"></i></div>
+                <span class="logo-text">zenoosh</span>
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="ابحث عن أناقتك...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="header-actions">
+                <div class="action-item"><i class="far fa-heart"></i><span class="badge">0</span></div>
+                <div class="action-item">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul class="container nav-list">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="women.html">نسائي</a></li>
+                <li><a href="men.html">رجالي</a></li>
+                <li><a href="kids.html">أطفال</a></li>
+                <li><a href="jewelry.html">مجوهرات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-title-section">
+            <h1 class="section-title">التشكيلة الجديدة</h1>
+            <p style="text-align:center; color:#666;">أفضل المختارات العصرية بين يديكِ</p>
+        </section>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="img-holder">
+                    <a href="product-details.html"> <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500" alt="منتج">
+                    </a>
+                    <button class="wish-btn" onclick="toggleWishlist(this)"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="p-details">
+                    <a href="product-details.html" style="text-decoration:none; color:inherit;">
+                        <h3>فستان سهرة فاخر</h3>
+                    </a>
+                    <p class="price">450 ر.س</p>
+                    <button class="add-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-holder">
+                    <a href="product-details.html">
+                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=500" alt="منتج">
+                    </a>
+                    <button class="wish-btn" onclick="toggleWishlist(this)"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="p-details">
+                    <a href="product-details.html" style="text-decoration:none; color:inherit;">
+                        <h3>فستان كلاسيك ناعم</h3>
+                    </a>
+                    <p class="price">310 ر.س</p>
+                    <button class="add-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-holder">
+                    <a href="product-details.html">
+                        <img src="https://images.unsplash.com/photo-1594932224828-b4b059b6f6ee?w=500" alt="منتج">
+                    </a>
+                    <button class="wish-btn" onclick="toggleWishlist(this)"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="p-details">
+                    <a href="product-details.html" style="text-decoration:none; color:inherit;">
+                        <h3>قميص رسمي أنيق</h3>
+                    </a>
+                    <p class="price">180 ر.س</p>
+                    <button class="add-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-holder">
+                    <a href="product-details.html">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500" alt="منتج">
+                    </a>
+                    <button class="wish-btn" onclick="toggleWishlist(this)"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="p-details">
+                    <a href="product-details.html" style="text-decoration:none; color:inherit;">
+                        <h3>بدلة كلاسيكية سوداء</h3>
+                    </a>
+                    <p class="price">850 ر.س</p>
+                    <button class="add-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
